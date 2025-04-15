@@ -25,7 +25,7 @@ if uploaded_file:
         X = scaler.fit_transform(df[fitur_numerik])
 
         # Pilih jumlah klaster
-        k = st.slider("Pilih jumlah klaster", 2, 3, 5, 6)
+        k = st.slider("Pilih jumlah klaster", 2, 3, 5)
 
         # K-Means Clustering
         kmeans = KMeans(n_clusters=k, random_state=42)
